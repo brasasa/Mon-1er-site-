@@ -21,8 +21,8 @@ body {
 
 .Sectionsize{
   position: relative;
-  height:95vh;
-  width: 95vw;
+  min-height:95vh;
+  min-width: 95vw;
   margin: 0;
 }
 
@@ -46,6 +46,8 @@ header {
   font-style:normal;
   }
 
+
+  
   nav a{
   text-decoration:none;
   color:#153828;
@@ -125,7 +127,7 @@ font-style:italic;
     background-color:#0097b2;
     width: 250px;
     height: 250px;
-    border-radius : 100px 0px 100px  0px;
+    border-radius : 0px 0px 0px  0px;
     position:absolute;
     left:60%;
     top:45%;
@@ -168,16 +170,16 @@ font-style:italic;
   
  .polybleu{
   background-color :#0097b2;
-  height: auto;
-  width:250px;
-  border-radius : 100px 0px 100px  0px;
-  
+  width: 300px;
+  height: 300px;
+  border-radius : 100px 100px 100px  100px; 
 }
 
 
   div.apropos{
     display: flex;
     gap:40px;
+    margin:50px;
     
     
      /* display:grid;
@@ -191,8 +193,18 @@ font-style:italic;
 
   }
    
+  article{
+    width:60%;
+  }
 
-
+  #scrollUp
+  {
+  width:10px;
+  position:absolute;
+  bottom : 10px;
+  right:5%;
+  opacity: 0.5;
+  }
   
 
 /*Les création*/
@@ -219,6 +231,10 @@ div#creapage1-1,#creapage1-2,#creapage1-3 {
   border-width: 2px;
   border-color: #0097b2;
 }
+
+
+/*Les boites à explosion - creapage2*/
+
 
 div#creapage2 {
   display:flex;
@@ -267,7 +283,23 @@ div#creapage4 {
 .imagecreap2,.imagecreap3,.imagecreap4 {
   border-style:solid;
   border-color: #0097b2;
+  width:100%;
+  object-fit: contain;
 }
+  
+.imagecreap2 {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+    
+  .polaroid{
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+
 
 
   
@@ -297,3 +329,4 @@ label {
 }
 
 
+@media 
